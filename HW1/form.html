@@ -1,0 +1,103 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!DOCTYPE html>
+<html>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item ml-3">
+                <a class="btn btn-outline-secondary" href="./mypage_bootstrap.html">Home</a>
+            </li>
+            <li class="nav-item ml-3">
+                <a class="btn btn-outline-secondary" href="./form.html">Form</a>
+            </li>
+            <li class="nav-item ml-3">
+                <a class="btn btn-outline-secondary" href="./mypage.html">Non-Bootstrap Home</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Add a New Interest</h1>
+        <form action="">
+            <div class="form-group">
+                <label for="interest-name">Interest Name</label>
+                <input type="interest-name" class="form-control" placeholder="Enter New Interest Name" id="iName">
+            </div>
+            <div class="form-group">
+                <label for="interest-text">Text About Interest</label>
+                <textarea type="interest-text" rows="5" class="form-control" id="iText"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="file">Upload Local Image</label>
+                    <input type="file" class="form-control-file">
+                </div>
+                <div class="col">
+                    <label for="num-tweets">Select Number of Tweets to Display</label>
+                    <select class="form-control" id="sel1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="interest-rating">One a scale of 1-5, how interested in this are you?</label>
+                <br>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">1
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">2
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">3
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">4
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">5
+                    </label>
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="login">Login to Finish Submitting</label>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Username" id="username">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Password" id="password">
+                    </div>
+                </div>
+                <br>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</html>
