@@ -74,25 +74,30 @@
                 </tr>
             </table>
             <h3>My Interests</h3>
-            <ul class="card-deck">
-                <div>
-                    <li class="card p-3">
-                        <img class="card-img-top" style="height:200px" src="https://i.ytimg.com/vi/8gw0rXPMMPE/maxresdefault.jpg" alt="">
-                        <h4 class="card-title">Programming</h4>
-                        <p class="card-text">Been in love for almost 10 years! C, C++, Java, Python, you name it, I'm interested.</p>
-                    </li>
-                </div>
+            <ul class="card-deck container">
+                <li class="card p-3">
+                    <img class="card-img-top" style="height:200px" src="https://i.ytimg.com/vi/8gw0rXPMMPE/maxresdefault.jpg" alt="">
+                    <div class="row card-title m-2 rounded-circle">
+                      <button class="col-md-2 btn btn-success" onclick="addCard('interest1')">+</button>
+                    </div>
+                    <div class="card-body" id="interest1"></div>
+                </li>
                 <li class="card p-3">
                     <img class="card-img-top" style="height:200px" src="https://www.snowskool.com/uploads/images/Ripping_it%21.jpg" alt="">
-                    <h4 class="card-title">Outdoors</h4>
-                    <p class="card-text">Skiing, climbing, hiking, sketchy (stupid) mountaineering, pretty much anything outside and active!</p>
+                    <div class="row card-title m-2 rounded-circle">
+                      <button class="col-md-2 btn btn-success" onclick="addCard('interest2')">+</button>
+                    </div>
+                    <div class="card-body" id="interest2"></div>
                 </li>
                 <li class="card p-3">
                     <img class="card-img-top" style="height:200px" src="https://cdn.asiatatler.com/asiatatler/i/hk/2018/11/06150444-jeong-kwan-noodles-horizontal_cover_1200x516.jpg" alt="">
-                    <h4 class="card-title">Cooking</h4>
-                    <p class="card-text">Sometimes it feels like a lot of work, but I've never regretted choosing to stay home and cook over going out to eat.</p>
+                    <div class="row card-title m-2 rounded-circle">
+                      <button class="col-md-2 btn btn-success" onclick="addCard('interest3')">+</button>
+                    </div>
+                    <div class="card-body" id="interest3"></div>
                 </li>
             </ul>
         </div>
       </body>
+      <script src="./manage-cards.js"></script>
     </html> 
